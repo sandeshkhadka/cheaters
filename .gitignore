@@ -1,4 +1,5 @@
 build/
 outputs/
 make
-
+a.out
+a.exe
