@@ -1,4 +1,4 @@
-#include <ncurses.h>
+#include<conio.h>
 #include <stdlib.h>
 #define MAX_ITEMS 10
 typedef struct {
