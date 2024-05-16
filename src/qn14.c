@@ -1,3 +1,4 @@
+//14. Write a program to implement linear search.
 #include <stdio.h>
 #define size 10
 int main() {

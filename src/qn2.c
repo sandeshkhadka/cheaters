@@ -1,3 +1,6 @@
+// 2. Write a menu driven program to illustrate basic operations of stack using
+// pointer.
+//  a) Push b) Pop c) Traverse d) Exit
 #include <ncurses.h>
 #include <stdlib.h>
 #define MAX_ITEMS 10

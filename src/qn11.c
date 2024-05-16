@@ -1,3 +1,10 @@
+// 11. Write a program that uses functions to perform the following operations
+// on singly linked list
+// a) Creation
+// b) Insertion 1) Insertion at beginning 3)
+// Insertion at specified position 3) Insertion at end
+// c) Deletion 1) Deletion from the beginning 2) Deletion from the specified
+// position 3) Deletion from the end d) Traversal. e) Exit
 #include <stdio.h>
 #include <stdlib.h>
 typedef struct node {
@@ -24,12 +31,14 @@ void insertNode(int data, Node **head, int pos) {
   if (pos == 0) {
     new->next = *head;
     *head = new;
+    printf("Inserted %d at head.\n", data);
     return;
   }
   if (pos == -1) {
     for (temp = *head; temp->next != NULL; temp = temp->next)
       ;
     temp->next = new;
+    printf("Inserted %d at end.\n", data);
     return;
   }
   temp = *head;
@@ -38,6 +47,7 @@ void insertNode(int data, Node **head, int pos) {
   }
   new->next = temp->next;
   temp->next = new;
+  printf("Inserted %d at position %d.\n", data, pos);
 }
 
 void printNode(Node *node) { printf("%d", node->data); }
@@ -47,6 +57,7 @@ void deleteNode(Node **head, int pos) {
     Node *temp = *head;
     *head = (*head)->next;
     free(temp);
+    printf("Deleted data at head.\n");
     return;
   }
   if (pos == -1) {
@@ -56,6 +67,7 @@ void deleteNode(Node **head, int pos) {
     temp = cursor->next;
     cursor->next = NULL;
     free(temp);
+    printf("Deleted data at end.\n");
     return;
   }
   Node *cursor = *head;
@@ -73,6 +85,7 @@ void deleteNode(Node **head, int pos) {
   Node *temp = cursor->next;
   cursor->next = cursor->next->next;
   free(temp);
+  printf("Deleted data at position: %d.\n", pos);
 }
 
 int main() {
