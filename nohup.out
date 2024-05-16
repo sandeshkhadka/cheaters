@@ -1,0 +1,8 @@
+
+** (org.pwmt.zathura:2967): WARNING **: 21:26:41.845: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Could not activate remote peer 'org.freedesktop.Avahi': activation request failed: unknown unit
+
+** (org.pwmt.zathura:2967): WARNING **: 21:26:41.845: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Could not activate remote peer 'org.freedesktop.Avahi': activation request failed: unknown unit
+
+** (org.pwmt.zathura:2967): WARNING **: 21:35:44.140: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Could not activate remote peer 'org.freedesktop.Avahi': activation request failed: unknown unit
+
+** (org.pwmt.zathura:2967): WARNING **: 21:35:44.140: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Could not activate remote peer 'org.freedesktop.Avahi': activation request failed: unknown unit
